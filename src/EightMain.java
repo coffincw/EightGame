@@ -1,6 +1,7 @@
 /**
  * Created by caleb on 3/6/17.
  */
+import java.io.*;
 public class EightMain {
     private static int N_Games = 0;
     static int currentTotal = 0;
@@ -17,6 +18,22 @@ public class EightMain {
             System.out.println("Better luck next time! Rounds: " + N_Games);
         }
 
+    }
+    static String readLine(String prompt) {
+        String line = null;
+        Console c = System.console();
+        if (c != null) {
+            line = c.readLine(prompt);
+        } else {
+            System.out.print(prompt);
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+            try {
+                line = bufferedReader.readLine();
+            } catch (IOException e) {
+                //Ignore
+            }
+        }
+        return line;
     }
 
     public static void playerFirst () {
