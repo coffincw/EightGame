@@ -2,11 +2,11 @@
  * Created by caleb on 3/6/17.
  */
 public class EightMain {
-    static int N_Games = 0;
+    private static int N_Games = 0;
     static int currentTotal = 0;
     static int previous = 0;
     static int playerPick = 0;
-    static boolean winner;
+    private static boolean winner;
 
     public static void main (String args[]) {
         winner = false;
