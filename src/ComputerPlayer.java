@@ -48,7 +48,6 @@ public class ComputerPlayer extends Player {
             } else {
                 num = 1;
             }
-            System.out.println(num);
             error = false;
         }
     }
